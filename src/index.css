@@ -1,0 +1,450 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b586d4;
+  padding: 10px;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-bar li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.home h1 {
+  text-align: center;
+  color: #715fda;
+}
+
+.enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.enemigo h1 {
+  text-align: center;
+  color: #9d6fd8;
+}
+
+.enemigo table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.enemigo table th,
+.enemigo table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.enemigo table th {
+  background-color: #874de4;
+  color: white;
+}
+
+.crearEnemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.crearEnemigo h1 {
+  text-align: center;
+  color: #946dec;
+}
+
+.crearEnemigo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.crearEnemigo label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.crearEnemigo input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.crearEnemigo button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #a479e7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actualizarEnemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.actualizarEnemigo h1 {
+  text-align: center;
+  color: #ad75ec;
+}
+
+.actualizarEnemigo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.actualizarEnemigo label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.actualizarEnemigo input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.actualizarEnemigo button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #b285fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nivel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.nivel h1 {
+  text-align: center;
+  color: #af8cd6;
+}
+
+.nivel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.nivel table th,
+.nivel table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.nivel table th {
+  background-color: #ad88e9;
+  color: white;
+}
+
+.crearNivel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.crearNivel h1 {
+  text-align: center;
+  color: #9667d3;
+}
+
+.crearNivel form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.crearNivel label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.crearNivel input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.crearNivel button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #b385f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actualizarNivel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.actualizarNivel h1 {
+  text-align: center;
+  color: #b382f1;
+}
+
+.actualizarNivel form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.actualizarNivel label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.actualizarNivel input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.actualizarNivel button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #7a63ca;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nivelEnemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.nivelEnemigo h1 {
+  text-align: center;
+  color: #a175f1;
+}
+
+.nivelEnemigo table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.nivelEnemigo table th,
+.nivelEnemigo table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.nivelEnemigo table th {
+  background-color: #9d60d6;
+  color: white;
+}
+
+.crearNivelEnemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.crearNivelEnemigo h1 {
+  text-align: center;
+  color: #967be0;
+}
+
+.crearNivelEnemigo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.crearNivelEnemigo label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.crearNivelEnemigo input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.crearNivelEnemigo button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #958beb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actuaizarNivelEnemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.actuaizarNivelEnemigo h1 {
+  text-align: center;
+  color: #b17be4;
+}
+
+.actuaizarNivelEnemigo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.actuaizarNivelEnemigo label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.actuaizarNivelEnemigo input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.actuaizarNivelEnemigo button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #8f7dcf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
