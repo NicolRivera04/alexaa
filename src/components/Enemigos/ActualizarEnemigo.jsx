@@ -1,10 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import NavBar from "../NavBar";
 
 function ActualizarEnemigo() {
   const [vida, setVida] = useState(0);
   const { id } = useParams();
+
+  useEffect(()=> {
+              llenarDatos ()
+          },[])
+          async function llenarDatos() {
+              await fetch(`https://skojryaxbquqtwvuyhfv.supabase.co/rest/v1/enemigo?id_enemigo=eq.${id}`, {
+                  method: "GET",
+                  headers: {
+                      "content-type": "application/json",
+                      apikey:
+                      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNrb2pyeWF4YnF1cXR3dnV5aGZ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MTQ0MTUsImV4cCI6MjA3MzA5MDQxNX0.nZMSWKNIve_UmSe1KEehy9ocL2FIR25QflnccDRQ998",
+                      Authorization:
+                      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNrb2pyeWF4YnF1cXR3dnV5aGZ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MTQ0MTUsImV4cCI6MjA3MzA5MDQxNX0.nZMSWKNIve_UmSe1KEehy9ocL2FIR25QflnccDRQ998",
+                  }
+              }).then((respuesta) =>respuesta.json())
+              .then((data) => {
+                
+                setVida(data[0].vida)
+                 
+              })
+              
+          }
 
   async function actualizar(e) {
     e.preventDefault();
@@ -14,7 +36,7 @@ function ActualizarEnemigo() {
         method: "PATCH",
         headers: {
           "content-type": "application/json",
-          apiKey:
+          apikey:
             "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNrb2pyeWF4YnF1cXR3dnV5aGZ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MTQ0MTUsImV4cCI6MjA3MzA5MDQxNX0.nZMSWKNIve_UmSe1KEehy9ocL2FIR25QflnccDRQ998",
           Authorization:
             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNrb2pyeWF4YnF1cXR3dnV5aGZ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MTQ0MTUsImV4cCI6MjA3MzA5MDQxNX0.nZMSWKNIve_UmSe1KEehy9ocL2FIR25QflnccDRQ998",
@@ -36,6 +58,7 @@ function ActualizarEnemigo() {
           type="text"
           id="vida"
           name="vida"
+          value={vida}
           onChange={(e) => setVida(e.target.value)}
         />
         <button type="submit">Actualizar</button>

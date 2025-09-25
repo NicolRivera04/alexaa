@@ -10,6 +10,7 @@ function Nivel(){
     const navigate = useNavigate();
 
     useEffect(() => {
+      
     fetch(
       "https://skojryaxbquqtwvuyhfv.supabase.co/rest/v1/nivel",
       {
